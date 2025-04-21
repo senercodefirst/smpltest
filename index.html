@@ -1,70 +1,27 @@
-<!doctype html>
-<html id="htmlTag" lang="tr">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Deneme</title>
-    <meta content="initial-scale=1, viewport-fit=cover, width=device-width" name="viewport"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="robots" content="index,follow"/>
-    <link id="siteicon" rel="icon"
-          href="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"/>
-    <meta name="description" content="T.C. BALTALİMANI MAHALLESİ MUHTARLIĞI VE GÜZELLEŞTİRME DERNEĞİ"/>
-    <meta name="keywords" content="t,c,,baltalimanı,mahallesi,muhtarlığı,ve,güzelleştirme,derneği"/>
-    <meta name="author" content="BALTALİMANI MUHTARLIĞI"/>
-    <meta property="og:title" content="Baltalimanı Derneği"/>
-    <meta property="og:image"
-          content="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"/>
-    <meta property="og:url" content="baltalimani-muhtarligi.com"/>
-    <meta property="og:site_name" content="Baltalimanı Derneği"/>
-    <meta property="og:description" content="T.C. BALTALİMANI MAHALLESİ MUHTARLIĞI VE GÜZELLEŞTİRME DERNEĞİ"/>
-    <meta property="og:type" content="website"/>
-    <script id="microHtmlElement" type="application/ld+json">{
-        "@context": "http://schema.org/",
-        "@graph": [
-            {
-                "@type": "Store",
-                "name": "BALTALİMANI MUHTARLIĞI",
-                "image": [
-                    "http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"
-                ],
-                "@id": "baltalimani-muhtarligi.com",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Baltalimanı, Balta Liman Çayır Cd",
-                    "addressLocality": "İstanbul",
-                    "postalCode": "34470",
-                    "addressCountry": "TR"
-                },
-                "telephone": "(0212) 277 82 00"
-            },
-            {
-                "@type": "Organization",
-                "name": "BALTALİMANI MUHTARLIĞI",
-                "url": "baltalimani-muhtarligi.com",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"
-                }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği",
-                        "item": "baltalimani-muhtarligi.com"
-                    }
-                ]
-            }
-        ]
-    }</script>
-    <link rel="stylesheet" href="hyperspace/assets/css/main.css"/>
-    <script src="hyperspace/assets/js/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Push Demo (On-Prem)</title>
 </head>
-<body class="is-preload">
+
+<body>
+<h1>Web Push Demo (On-Prem)</h1>
+<button id="requestPermissionButton">Request Permission & Subscribe</button>
+<button id="unsubscribeButton">Unsubscribe</button>
+<button id="sendNotificationButton">Send Test Notification</button>
+
+<!--<script type="text/javascript">-->
+<!--    const smpl_notification_appId = "smpl";-->
+<!--    const PUBLIC_VAPID_KEY = "BMHqXrsvpqIsJNDAGVcm41otSKyj1LdqYJ7HspYakZTEevKSLBYWtznxLqQl8qsL9vHP1oycvb5xMs7X_bXADiM";-->
+<!--</script>-->
+<!--<script src="smpl-script.js"></script>-->
+
 <script type="text/javascript">
     const smpl_notification_config = undefined
     const smpl_notification_appId = "f06509ec-e561-4bc0-94cb-613b4acb9f28"
@@ -74,89 +31,24 @@
 </script>
 <script type="module" src="http://192.168.1.124:3003/smpl-script.js"></script>
 <script type="module" src="smpl-notification-sw.js"></script>
-<header id="header" class="p-grid p-justify-center p-align-center vertical-container">
-    <div class="p-col-12 p-grid">
-        <div class="p-col-12 p-md-3 p-lg-3">
-            <div class="p-grid vertical-container p-text-center">
 
-                <div class="p-col p-as-center p-justify-center"><img
-                        loading="lazy" alt="Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği"
-                        title="Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği"
-                        src="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/632939647__sanli_bayragimiz.jpeg"
-                        class="cfm-logo-2x"/></div>
-            </div>
-        </div>
-        <div class="p-col-12 p-md-6 p-lg-6 p-text-center">
-            <div class="p-grid vertical-container p-text-center">
-                <div class="p-col p-as-center p-justify-center">
-                    <a href="/" class="title"
-                                                                   title="Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği">Baltalimanı
-                    Mahallesi Koruma Yaşatma ve Dayanışma Derneği</a></div>
-            </div>
-        </div>
-        <div class="p-col-12 p-md-3 p-lg-3">
-            <div class="p-grid vertical-container p-text-center">
-                <div class="p-col p-as-center p-justify-center"><img
-                        loading="lazy" alt="Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği"
-                        title="Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği"
-                        src="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"
-                        class="cfm-logo-2x"/></div>
-            </div>
-        </div>
+<script>
+    const requestPermissionButton = document.getElementById('requestPermissionButton');
+    const unsubscribeButton = document.getElementById('unsubscribeButton');
+    const sendNotificationButton = document.getElementById('sendNotificationButton');
 
-    </div>
-    <nav class="p-col-12">
-        <ul>
-            <li><a href="category/1679433700052-haber.html"
-                   title="Haber">Haber</a></li>
-            <li><a onclick="subscribeUser()" title="Resim Galerisi">Resim Galerisi</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="wrapper">
-    <section id="intro" class="wrapper style1 fullscreen fade-up"
-             style="background-image:url(http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/032022/982935594__baltalimani-mah13-1.jpeg)">
-        <div class="inner">
-            <img loading="lazy" alt="Baltalimanı Derneği" title="Baltalimanı Derneği"
-                 src="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"
-                 style="float:left;max-width:250px;max-height:250px">
-            <h1>Baltalimanı Derneği</h1>
-            <p>Baltalimanı Mahallesi Koruma Yaşatma ve Dayanışma Derneği</p></div>
-    </section>
-    <section id="three" class="wrapper style3 fade-up">
-        <section id="main" class="wrapper align-center">
-            <div class="inner">
-                <h2 class="major">T.C. BALTALİMANI MAHALLESİ MUHTARLIĞI VE GÜZELLEŞTİRME DERNEĞİ</h2>
-                <img loading="lazy"
-                     src="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/012021/985556674__logo.png"
-                     style="max-height: 600px; width: 100%; object-fit: scale-down; border-radius: 5px"
-                     alt="T.C. BALTALİMANI MAHALLESİ MUHTARLIĞI VE GÜZELLEŞTİRME DERNEĞİ"
-                     title="T.C. BALTALİMANI MAHALLESİ MUHTARLIĞI VE GÜZELLEŞTİRME DERNEĞİ">
-                <div class="ql-editor align-center"><p>Baltalimanı Mahallesi, İstanbul 'un Sarıyer İlçesine Bağlıdır.
-                    Sarıyer'in sahil mahallelerinden bir tanesidir</p></div>
-            </div>
-            <div class="inner">
-                <h2 class="major">BALTALİMANI MAHALLESİ</h2>
-                <img loading="lazy"
-                     src="http://app.codenfast.com:9001/api/rest/server-files/system/image/baltalimani-muhtarligi.com/032022/1402816295__1891705567__dernek-tabela.jpeg"
-                     style="max-height: 600px; width: 100%; object-fit: scale-down; border-radius: 5px"
-                     alt="BALTALİMANI MAHALLESİ" title="BALTALİMANI MAHALLESİ">
+    requestPermissionButton.addEventListener('click', () => {
+        requestPermission();
+    });
 
-            </div>
-        </section>
-    </section>
-</div>
-</div>
-</section>
-<div class="cfm-cookie-container-style"><span class="cfm-cookie-font">Sitemizde çerezler kullanılmaktadır ve siteye giriş yapmanız ile bu kullanımı kabul ettiğiniz varsayılmaktadır.</span>
-</div>
-<script src="hyperspace/assets/js/jquery.scrollex.min.js"></script>
-<script src="hyperspace/assets/js/jquery.scrolly.min.js"></script>
-<script src="hyperspace/assets/js/browser.min.js"></script>
-<script src="hyperspace/assets/js/breakpoints.min.js"></script>
-<script src="hyperspace/assets/js/util.js"></script>
-<script src="hyperspace/assets/js/main.js"></script>
-<script src="hyperspace/assets/js/cfm.min.js"></script>
-<link rel="stylesheet" href="hyperspace/assets/css/cfm.min.css"/>
+    unsubscribeButton.addEventListener('click', () => {
+        unsubscribeUser();
+    });
+
+    sendNotificationButton.addEventListener('click', () => {
+        sendTestNotification();
+    });
+</script>
 </body>
+
 </html>
