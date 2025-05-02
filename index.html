@@ -13,6 +13,8 @@
 <body>
 <h1>Web Push Demo (On-Prem)</h1>
 <button id="requestPermissionButton">Request Permission & Subscribe</button>
+<button id="subscribeToTopic_1">Topic 1</button>
+<button id="subscribeToTopic_2">Topic 2</button>
 <button id="unsubscribeButton">Unsubscribe</button>
 <button id="sendNotificationButton">Send Test Notification</button>
 
@@ -34,6 +36,8 @@
 
 <script>
     const requestPermissionButton = document.getElementById('requestPermissionButton');
+    const subscribeToTopic_1 = document.getElementById('subscribeToTopic_1');
+    const subscribeToTopic_2 = document.getElementById('subscribeToTopic_2');
     const unsubscribeButton = document.getElementById('unsubscribeButton');
     const sendNotificationButton = document.getElementById('sendNotificationButton');
 
@@ -47,6 +51,14 @@
 
     sendNotificationButton.addEventListener('click', () => {
         sendTestNotification();
+    });
+
+    subscribeToTopic_1.addEventListener('click', () => {
+        subscribeToTopic('Topic 1');
+    });
+
+    subscribeToTopic_2.addEventListener('click', () => {
+        subscribeToTopic('Topic 2');
     });
 </script>
 </body>
